@@ -55,5 +55,30 @@ function rateFive(){
     });
 }
 ```
+7) **Establish object to be voted on**
+- Go to your Stamplay editor and go to the **Data** section. Then go to **Objects**
+- Establish what object in the collection your going to upvote/downvote by getting it's object **Id**.
 
+8) **upvote( )**
+```
+function upvote(){
+	var objectInstance = new Stamplay.Cobject('store').Model;
+	objectInstance.fetch('5654a452b3039e5f75c0d0e4').then(function(){
+    	return objectInstance.upVote(1).then(function(){
+    		alert('Upvoted by 1!');
+    	});
+    });
+}
+```
+9) **downvote( )**
+```
+function downvote(){
+	var objectInstance = new Stamplay.Cobject('store').Model;
+	objectInstance.fetch('5654a452b3039e5f75c0d0e4').then(function(){
+    	return objectInstance.downVote(1).then(function(){
+    		alert('Downvoted by 1!');
+    	});
+    });
+}
+```
 ![alt tag](public/images/object-actions-micro-repo.png)
