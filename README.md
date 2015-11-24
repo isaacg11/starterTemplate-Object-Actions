@@ -40,5 +40,20 @@ function createObjectComment(){
     });
 }
 ```
+5) **Establish object to be rated**
+- Go to your Stamplay editor and go to the **Data** section. Then go to **Objects**
+- Establish what object in the collection your going to rate by getting it's object **Id**.
+
+6) **rate( )**
+```
+function rateFive(){
+	var objectInstance = new Stamplay.Cobject('store').Model;
+	objectInstance.fetch('56549d53b3039e5f75c0d0dd').then(function(){
+    	return objectInstance.rate(5).then(function(){
+    		alert('rated 5!');
+    	});
+    });
+}
+```
 
 ![alt tag](public/images/object-actions-micro-repo.png)
