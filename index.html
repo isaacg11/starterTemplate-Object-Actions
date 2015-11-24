@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SDK Actions</title>
+	<link rel="stylesheet" type="text/css" href="public/css/main.css">
+</head>
+<body>
+
+<!--RATING-->
+	<div id="ratingBox">
+		<p>Rate Object</p>
+		<input onclick="rateFive()" type="checkbox"/>5
+		<input onclick="rateFour()" value="4" type="checkbox"/>4
+		<input onclick="rateThree()" value="3" type="checkbox"/>3
+		<input onclick="rateTwo()" value="2" type="checkbox"/>2
+		<input onclick="rateOne()" value="1" type="checkbox"/>1
+	</div>
+
+<!--VOTING-->
+	<div id="votingBox">
+		<p>Upvote/Downvote Object</p>
+		<a onclick="upvote()">Upvote <i class="fa fa-thumbs-up"></i></a> | 
+		<a onclick="downvote()">Downvote <i class="fa fa-thumbs-down"></i></a>
+	</div>
+
+<!--COMMENTS-->
+	<div id="commentBox">
+		<p>Object Comment</p>
+		<input id="commentInput" placeholder="comment..." id="comment"/>
+		<br>
+		<a onclick="createObjectComment()">Create</a>
+	</div>
+
+
+<!--SCRIPTS-->
+<script src="//drrjhlchpvi7e.cloudfront.net/libs/stamplay-js-sdk/1.3.1/stamplay.min.js"></script>
+<script src="public/app.js"></script>
+</body>
+</html>
