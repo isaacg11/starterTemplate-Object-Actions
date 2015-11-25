@@ -1,9 +1,9 @@
 # starterTemplate-Object-Actions
-a starter template for creating object actions using the Stamplay SDK
+a Javascript starter template for creating object actions using the Stamplay SDK
 
 **NOTE: Users must be logged in to use the rate/vote/comment function!**
 
-**CLONING: When cloning this repo, you must switch out the appId & object Id's with your own to make it work.**
+**CLONING: When cloning this repo, you must initialize your app first to make it work.**
 
  1) **Initialize the front-end of your app with Stamplay**
  <br>
@@ -26,7 +26,7 @@ Stamplay.init('yourAppId');
 ```
 3) **Establish object to be commented on**
 - Go to your Stamplay editor and go to the **Data** section. Then go to **Objects**
-- Establish what object in the collection your going to comment on by getting it's object **Id**.
+- Establish which object in the collection your going to comment on by getting it's object **Id**.
 
 4) **comment( )**
 ```
