@@ -42,7 +42,7 @@ function createObjectComment(){
 ```
 5) **Establish object to be rated**
 - Go to your Stamplay editor and go to the **Data** section. Then go to **Objects**
-- Establish what object in the collection your going to rate by getting it's object **Id**.
+- Establish which object in the collection your going to rate by getting it's object **Id**.
 
 6) **rate( )**
 ```
@@ -57,7 +57,7 @@ function rateFive(){
 ```
 7) **Establish object to be voted on**
 - Go to your Stamplay editor and go to the **Data** section. Then go to **Objects**
-- Establish what object in the collection your going to upvote/downvote by getting it's object **Id**.
+- Establish which object in the collection your going to upvote/downvote by getting it's object **Id**.
 
 8) **upvote( )**
 ```
@@ -81,4 +81,12 @@ function downvote(){
     });
 }
 ```
+
+6) **Run app**
+- To run your app, you'll need to install the Stamplay Command Line Tool. If you have already installed it, ignore this step. Otherwise, enter this command in your command line:
+```
+$ npm install -g stamplay-cli
+```
+- If your app is in development, you can run it on your local server by entering **stamplay start** in your command line.
+- If your app is in production, you can deploy it live by entering **stamplay deploy** in your command line.
 ![alt tag](public/images/object-actions-micro-repo.png)
