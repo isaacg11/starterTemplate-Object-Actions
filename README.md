@@ -26,7 +26,7 @@ Stamplay.init('yourAppId');
 ```
 3) **Establish object to be commented on**
 - Go to your Stamplay editor and go to the **Data** section. Then go to **Objects**
-- Establish which object in the collection your going to comment on by getting it's object **Id**.
+- Establish which object in the collection your going to comment on by getting it's **object Id**.
 
 4) **comment( )**
 ```
@@ -42,7 +42,7 @@ function createObjectComment(){
 ```
 5) **Establish object to be rated**
 - Go to your Stamplay editor and go to the **Data** section. Then go to **Objects**
-- Establish which object in the collection your going to rate by getting it's object **Id**.
+- Establish which object in the collection your going to rate by getting it's **object Id**.
 
 6) **rate( )**
 ```
@@ -57,7 +57,7 @@ function rateFive(){
 ```
 7) **Establish object to be voted on**
 - Go to your Stamplay editor and go to the **Data** section. Then go to **Objects**
-- Establish which object in the collection your going to upvote/downvote by getting it's object **Id**.
+- Establish which object in the collection your going to upvote/downvote by getting it's **object Id**.
 
 8) **upvote( )**
 ```
