@@ -32,8 +32,8 @@ Stamplay.init('yourAppId');
 ```
 function createObjectComment(){
 	var newComment = document.getElementById('comment').value;
-	var objectInstance = new Stamplay.Cobject('store').Model;
-	objectInstance.fetch('5654afc6b3039e5f75c0d0e9').then(function(){
+	var objectInstance = new Stamplay.Cobject('objectModel').Model;
+	objectInstance.fetch('id').then(function(){
     	return objectInstance.comment(newComment).then(function(){
     		alert('Comment created!');
     	});
@@ -47,8 +47,8 @@ function createObjectComment(){
 6) **rate( )**
 ```
 function rateFive(){
-	var objectInstance = new Stamplay.Cobject('store').Model;
-	objectInstance.fetch('56549d53b3039e5f75c0d0dd').then(function(){
+	var objectInstance = new Stamplay.Cobject('objectModel').Model;
+	objectInstance.fetch('id').then(function(){
     	return objectInstance.rate(5).then(function(){
     		alert('rated 5!');
     	});
@@ -62,8 +62,8 @@ function rateFive(){
 8) **upvote( )**
 ```
 function upvote(){
-	var objectInstance = new Stamplay.Cobject('store').Model;
-	objectInstance.fetch('5654a452b3039e5f75c0d0e4').then(function(){
+	var objectInstance = new Stamplay.Cobject('objectModel').Model;
+	objectInstance.fetch('id').then(function(){
     	return objectInstance.upVote(1).then(function(){
     		alert('Upvoted by 1!');
     	});
@@ -73,8 +73,8 @@ function upvote(){
 9) **downvote( )**
 ```
 function downvote(){
-	var objectInstance = new Stamplay.Cobject('store').Model;
-	objectInstance.fetch('5654a452b3039e5f75c0d0e4').then(function(){
+	var objectInstance = new Stamplay.Cobject('objectModel').Model;
+	objectInstance.fetch('id').then(function(){
     	return objectInstance.downVote(1).then(function(){
     		alert('Downvoted by 1!');
     	});
